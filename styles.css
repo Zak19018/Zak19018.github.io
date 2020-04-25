@@ -3,18 +3,18 @@ body {
     font-size: 16px;
     padding: 2em;
     margin: 1em auto;
-    max-width: 600px; 
-  }
-  
-  header, footer {
+    max-width: 600px;
+}
+
+header, footer {
     background-color: #212b31;
     color: white;
     text-align: center;
     padding: 10px;
     border-radius: 10px;
-  }
-  
-  img {
+}
+
+img {
     float: right;
     position: relative;
     top: -80px;
@@ -23,26 +23,26 @@ body {
     border: 1px solid white;
     border-radius: 10px;
     box-shadow: 2px 2px white;
-  }
-  
-  h1 {
+}
+
+h1 {
     position: relative;
     left: -60px;
-  }
-  
-  hr {
+}
+
+hr {
     width: 70%;
-    
-  }
-  
-  main {
+
+}
+
+main {
     padding: 10px;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     background-color: dimgray;
-  }
-  
-  a:visited {
+}
+
+a:visited {
     color: #8b0000;
-  }
+}
