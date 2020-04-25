@@ -39,6 +39,10 @@ main {
     padding: 10px;
 }
 
+footer a:link{
+    color: yellow;  
+}
+
 a:hover {
     background-color: dimgray;
 }
@@ -46,3 +50,4 @@ a:hover {
 a:visited {
     color: #8b0000;
 }
+
