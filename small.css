@@ -11,23 +11,22 @@ header, footer {
     color: white;
     text-align: center;
     padding: 10px;
-    border-radius: 10px;
 }
 
 img {
-    float: right;
-    position: relative;
-    top: -80px;
     width: 150px;
     margin: 10px;
     border: 1px solid white;
-    border-radius: 10px;
-    box-shadow: 2px 2px white;
 }
 
 h1 {
-    position: relative;
-    left: -60px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1rem;
 }
 
 hr {
