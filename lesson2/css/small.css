@@ -1,0 +1,87 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    display: grid;
+}
+
+header {
+    background-color: #008080;
+    padding: 1rem 2%; /* 1rem = 1 * base font-size (16px) */
+}
+
+header h1 {
+    margin: 0; /* by default, browsers put margins around headings - this removes those margins */ 
+    font-family: 'PT Serif', serif;
+
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+    font-family: 'PT Serif', serif;
+
+}
+
+nav {
+    background-color: #111;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li.active {
+    background-color: #333;
+}
+
+nav a {
+    display: block;
+    padding: .8rem 0;
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #444;
+}
+
+main {
+    padding: 1rem 2%;
+    display: block;
+}
+
+main h1 {
+    color: #008080;
+}
+
+main figure img {
+    width: 100%;
+}
+
+main figure {
+    width: 100%;
+    margin: 0;
+}
+
+main figcaption {
+    text-align: center;
+    font-size: .8rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 2%;
+    background-color: #008080;
+}
