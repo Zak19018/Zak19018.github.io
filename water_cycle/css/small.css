@@ -15,7 +15,7 @@ body {
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
-    background-color: #ddd;
+    background-color: #b0e0e6;
 }
 header img {float: left; margin-right: 10px; width: 50px;}
 header h1 {margin: 0; font-size: 1.3rem;}
@@ -46,8 +46,8 @@ nav ul li a:hover {
     color: #333;
 }
 nav ul li.active a {
-    background-color: #000;
-    color: #fff;
+    background-color: #b0e0e6;
+    color: black;
 }
 /*----------- MAIN --------------*/
 main {
@@ -58,9 +58,10 @@ main {
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #ddd;
+    background-color: #666;
     padding: .5rem 2%;
     text-align: center;
+    color: #eee;
 }
 
 
