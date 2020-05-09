@@ -1,8 +1,15 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
 
 /*----------- apply a natural box layout model to all elements --------------*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 
 /*----------- BODY --------------*/
@@ -18,15 +25,37 @@ header {
     background-color: #FFD700;
     font-family: 'Jost', 'Open Sans', sans-serif;
 }
-header img {float: left; margin-right: 10px; width: 75px;}
-header h1 {margin: 0; font-size: 1.5rem; margin-top: 1rem;}
-header h2 {margin: 0; font-weight: normal; font-size: 1rem;}
-header h3 {margin-top: 1rem; margin-left: 85px; font-weight: normal; font-size: 1rem;}
+
+header img {
+    float: left;
+    margin-right: 10px;
+    width: 75px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+header h3 {
+    margin-top: 1rem;
+    margin-left: 85px;
+    font-weight: normal;
+    font-size: 1rem;
+}
 
 /*----------- NAVIGATION --------------*/
 nav {
     background-color: black;
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -48,10 +77,12 @@ nav ul li a:hover {
     background-color: #004FFF;
     color: white;
 }
+
 nav ul li.active a {
     background-color: #586F7C;
     color: #FFFFFF;
 }
+
 /*----------- MAIN --------------*/
 main {
     padding: 0 2%;
@@ -69,11 +100,14 @@ table {
     margin-bottom: 1.5rem;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1.5px solid #000000;
 }
 
-td, th {
+td,
+th {
     padding: 15px;
 }
 
@@ -103,15 +137,12 @@ td, th {
     color: #FFFFFF;
 }
 
-#line{
+#line {
     font-family: 'Libre Caslon Text', 'serif';
     font-weight: bold;
     font-size: 1.5rem;
 }
 
-#text {
-
-}
 
 /*----------- FOOTER --------------*/
 footer {
@@ -127,7 +158,7 @@ footer {
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
