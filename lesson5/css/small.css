@@ -68,7 +68,7 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 1.8rem;
-    color: #004FFF;
+    color: #FFD700;
 }
 
 nav ul {
@@ -104,6 +104,18 @@ nav ul.hide {
 }
 
 /*----------- MAIN --------------*/
+div#banner {
+    background-color: #004FFF;
+}
+
+div.showme {
+    display: block;
+}
+
+div.hideme{
+    display: none;
+}
+
 main {
     padding: 0 2%;
     min-height: 10rem;
