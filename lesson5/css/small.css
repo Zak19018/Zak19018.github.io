@@ -68,7 +68,7 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 1.8rem;
-    color: #FFD700;
+    color: #004FFF;
 }
 
 nav ul {
@@ -116,6 +116,35 @@ main h1 {
 
 main h2 {
     font-size: 1.4rem;
+}
+
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+}
+
+.herodiv img {
+    width: 100%;
+}
+
+.summary {
+    width: 20rem;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background-color: rgba(0, 79, 255, 0.6);
+	border: 1px solid #000;
+	padding: 1rem;
+	box-shadow: 0 0 15px #000000;
+	opacity: .8;
+}
+
+.article {
+    padding: 0 2%;
+    border: 1px solid #586F7C;
+}
+.article img {
+    width: 100%;
 }
 
 
