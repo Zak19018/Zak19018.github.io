@@ -12,6 +12,7 @@ var month = ["January", "February", "March", "April", "May", "June", "July", "Au
 var year = today.getFullYear();
 document.getElementById('currentDate').innerHTML = weekday[today.getDay()] + ", " + date + " " + month[today.getMonth()] + " " + year ;
 
+
 /* banner message */
 const day = new Date();
 console.log(day);
