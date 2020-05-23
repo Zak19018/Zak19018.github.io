@@ -17,10 +17,46 @@
 
 
 /*----------- MAIN --------------*/
+#five-day {
+    display: block;
+}
+
+section.forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 1.5rem;
+}
+
+section.forecast div {
+    text-align: center;
+    border: 1.5px solid #000000;
+}
+
+section.forecast div h3 {
+    background-color: #004FFF;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+section.forecast div img {
+    padding: 10px;
+    width: 4rem;
+}
+
+.article {
+    border: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
 .article img {
-   
+    margin-left: 20px;
     float: right;
-    width: 30%;
+    width: 350px;
+}
+#clearing {
+    clear: right;
 }
 
 
