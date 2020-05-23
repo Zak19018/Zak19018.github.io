@@ -59,7 +59,19 @@ section.forecast div img {
     clear: right;
 }
 
+.contact {
+    display: inline;
+    clear: right;
+}
+
+.map img {
+    float: right;
+    width: 350px;
+    position: relative;
+    bottom: 280px;
+    right: 5px;       
+}
 
 /*----------- FOOTER --------------*/
-    
-} /* end of media query */
+
+/* end of media query */
