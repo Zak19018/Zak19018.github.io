@@ -52,24 +52,26 @@ section.forecast div img {
 
 .article img {
     margin-left: 20px;
+    margin-bottom: 20px;
     float: right;
     width: 350px;
 }
-#clearing {
-    clear: right;
+
+#box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .contact {
     display: inline;
     clear: right;
+    grid-column: 1/2;
 }
 
-.map img {
+.map {
     float: right;
-    width: 350px;
-    position: relative;
-    bottom: 280px;
-    right: 5px;       
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 
 /*----------- FOOTER --------------*/

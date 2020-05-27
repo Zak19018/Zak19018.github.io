@@ -38,11 +38,8 @@
 
 
 /*----------- MAIN --------------*/
-.map img {
-    width: 350px;
-    position: relative;
-    bottom: 280px;
-    right: 5px;    
+.map {
+    justify-self: end;
 }
 
 /*----------- FOOTER --------------*/
