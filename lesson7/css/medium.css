@@ -1,0 +1,31 @@
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 35rem) {
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+    header img {width: 150px; float: left}
+    header h1 {font-size: 2rem; margin-top: 2.5rem;}
+    header h2 {font-size: 1.5rem;}
+
+
+/*----------- NAVIGATION --------------*/
+    
+
+
+/*----------- MAIN --------------*/
+.container {
+    grid-template-columns: 1fr 1fr;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*----------- FOOTER --------------*/
+
+}
+/* end of media query */

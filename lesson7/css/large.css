@@ -1,0 +1,56 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+
+    header, nav, main {
+        max-width: 64rem;
+        margin: 0 auto;
+    }
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION 
+    nav ul li {flex-basis: auto; -no-flex: 0 0 auto;} --------------*/
+    nav button {
+        display: none;
+    }
+    nav ul {
+        margin-left: 2%;
+    }
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        padding: .5rem 1rem;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+
+/*----------- MAIN --------------*/
+.container {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+figure:hover {
+    box-shadow: 5px 10px 18px #586F7C;
+}
+
+
+/*----------- FOOTER --------------*/
+    footer {
+        max-width: 61rem; 
+        margin: 0 auto;
+    }
+
+} /* end of media query */

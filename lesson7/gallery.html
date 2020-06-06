@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="This is my WDD 230 Weather Site">
+    <meta name="author" content="Zak Shaik">
+
+    <link rel="shortcut icon" href="windywelly.ico">
+
+    <title>Gallery: Welly Weather</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+
+    
+</head>
+
+<body>
+
+    <div id="headwrap">
+        <header class="clearfix">
+            <img src="images/windywelly.png" alt="Welly Weather Logo">
+            <h1>Welly Weather</h1>
+            <h2>Wet, windy, or wild weather - we've got you covered!</h2>
+
+        </header>
+    </div>
+
+    <div id="navwrap">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li class="active"><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div id="banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+
+        <h1>Gallery</h1>
+        <div class="container">
+            <figure>
+                <img src="images/placeholder.png" data-src="https://picsum.photos/id/10/400/300" alt="clear ocean">
+                <figcaption>Clear Ocean</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" data-src="https://picsum.photos/id/109/400/300" alt="sunny reeds">
+                <figcaption>Sunny Reeds</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" data-src="https://picsum.photos/id/112/400/300" alt="windy reeds">
+                <figcaption>Windy Reeds</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" data-src="https://picsum.photos/id/1016/400/300" alt="dry canyon">
+                <figcaption>Dry Canyon</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" data-src="https://picsum.photos/id/1018/400/300" alt="crisp hills">
+                <figcaption>Crisp Hills</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" data-src="https://picsum.photos/id/1019/400/300" alt="overcast beach">
+                <figcaption>Overcast Beach</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" data-src="https://picsum.photos/id/1021/400/300" alt="foggy mountain">
+                <figcaption>Foggy Mountain</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" data-src="https://picsum.photos/id/1037/400/300" alt="sunny dawn">
+                <figcaption>Sunny Dawn</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" data-src="https://picsum.photos/id/1025/400/300" alt="cold pup">
+                <figcaption>Cold Pup</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <div id="footwrap">
+        <footer class="clearfix">
+            &copy; Welly Weather 2020 &bull; Zak Shaik &bull; <span id="currentDate"></span>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({google: {families: ["Jost", "Libre Caslon Text"]}});
+  </script>
+
+</body>
+
+</html>
