@@ -28,3 +28,8 @@ if (dayNumber == 6) {
 else {
     element.classList.add("hideme");
 }
+
+/* Storm Severity Scrollbar */
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
