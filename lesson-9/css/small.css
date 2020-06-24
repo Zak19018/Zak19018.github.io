@@ -162,6 +162,7 @@ section.forecast {
 .article {
     padding: 10px;
     border: 1px solid #586F7C;
+    margin-bottom: 1rem;
 }
 .article img {
     width: 100%;
@@ -173,6 +174,16 @@ section.forecast {
 }
 
 .map {
+    width: 100%;
+}
+
+article {
+    background-color: rgba(35, 44, 49, 0.2);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cards img {
     width: 100%;
 }
 

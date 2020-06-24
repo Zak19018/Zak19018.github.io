@@ -74,6 +74,22 @@ section.forecast div img {
     margin-bottom: 1rem;
 }
 
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cards h3, h4, p {
+    grid-column: 1/2;
+    text-align: center;
+}
+
+.cards img {
+    align-self: center;
+    justify-self: center;
+}
+
+
 /*----------- FOOTER --------------*/
 
 }

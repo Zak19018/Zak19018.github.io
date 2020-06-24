@@ -42,6 +42,11 @@
     justify-self: end;
 }
 
+.cards {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
 /*----------- FOOTER --------------*/
     footer {
         max-width: 61rem; 
