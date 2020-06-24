@@ -1,0 +1,173 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: 'Jost', 'Open Sans', sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+
+div#headwrap {
+    background-color: #FFD700;
+}
+
+header {
+    padding: 1rem 2%;
+    
+    font-family: 'Jost', 'Open Sans', sans-serif;
+}
+
+header img {
+    float: left;
+    margin-right: 10px;
+    width: 100px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+header h3 {
+    margin-top: 1rem;
+    margin-left: 85px;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+/*----------- NAVIGATION --------------*/
+
+div#navwrap {
+    background-color: #000000;
+}
+
+nav button {
+    margin: .2rem 2%;
+    padding: .5rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: #FFD700;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Jost', 'Open Sans', sans-serif;
+}
+
+nav ul li a {
+    display: block;
+    color: #FFFFFF;
+    padding: 1rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+nav ul li a:hover {
+    background-color: #004FFF;
+    color: #FFFFFF;
+}
+
+nav ul li.active a {
+    background-color: #586F7C;
+    color: #FFFFFF;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/*----------- MAIN --------------*/
+div#banner {
+    background-color: #004FFF;
+    padding: 1rem;
+    color: #FFFFFF;
+}
+
+div.showme {
+    display: block;
+}
+
+div.hideme{
+    display: none;
+}
+
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+main h1 {
+    font-size: 1.5rem;
+    font-family: 'Libre Caslon Text', serif;
+}
+
+main h2 {
+    font-size: 1.4rem;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
+
+.container {
+    display: grid;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+
+figcaption {
+    padding: 1rem;
+    border: 1px solid #586F7C;
+}
+/*----------- FOOTER --------------*/
+
+
+footer {
+    background-color: #000000;
+    padding: 1rem 2%;
+    font-size: .9rem;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Jost', 'Open Sans', sans-serif;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}  

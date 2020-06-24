@@ -1,0 +1,42 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    color: rgb(0,0,139);
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: rgb(0,0,139);
+}
+
+p {
+    padding: 1rem;
+}
+
+img {
+    padding: 1rem;
+    box-shadow: 7px 10px 17px -2px rgba(0,0,0,0.68);
+}
+
+section {
+    border: 1px solid #555;
+    background-color: rgba(65,105,225, 0.4);
+}
