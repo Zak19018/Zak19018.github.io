@@ -18,4 +18,3 @@
         else {
             document.getElementById('chill').textContent = "N/A";
         }
-    
