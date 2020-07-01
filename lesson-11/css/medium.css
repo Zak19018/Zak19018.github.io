@@ -1,0 +1,95 @@
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 35rem) {
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+    header img {width: 150px; float: left}
+    header h1 {font-size: 2rem; margin-top: 2.5rem;}
+    header h2 {font-size: 1.5rem;}
+
+
+/*----------- NAVIGATION --------------*/
+    
+
+
+/*----------- MAIN --------------*/
+#five-day {
+    display: block;
+}
+
+section.forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 1.5rem;
+}
+
+section.forecast div {
+    text-align: center;
+    border: 1.5px solid #000000;
+}
+
+section.forecast div h3 {
+    background-color: #004FFF;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+section.forecast div img {
+    padding: 10px;
+    width: 4rem;
+}
+
+.article {
+    border: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.article img {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    float: right;
+    width: 350px;
+}
+
+#box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact {
+    display: inline;
+    clear: right;
+    grid-column: 1/2;
+}
+
+.map {
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cards h3, .cards h4, .cards p {
+    grid-column: 1/2;
+    text-align: center;
+}
+
+.cards img {
+    align-self: center;
+    justify-self: center;
+}
+
+/*----------- FOOTER --------------*/
+
+}
+/* end of media query */
