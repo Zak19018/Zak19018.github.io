@@ -142,7 +142,7 @@ main h2 {
 .summary {
     width: 20rem;
 	position: absolute;
-	top: 30px;
+	top: 20px;
 	left: 30px;
 	background-color: rgba(88, 111, 124);
 	border: 1px solid #000;
@@ -162,6 +162,7 @@ section.forecast {
 .article {
     padding: 10px;
     border: 1px solid #586F7C;
+    margin-bottom: 1.5rem;
 }
 .article img {
     width: 100%;
@@ -186,6 +187,85 @@ article {
     margin-bottom: 1rem;
 }
 
+img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
+
+.container {
+    display: grid;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+
+figcaption {
+    padding: 1rem;
+    border: 1px solid #586F7C;
+}
+
+/*----------- FORM --------------*/
+
+form legend {
+    color: #004FFF;
+    }
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+
+.bar span {
+    padding-top: 1rem;
+    display: block;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #004FFF;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    width: 96%;
+    max-width: 20rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
 /*----------- FOOTER --------------*/
 
 
@@ -196,6 +276,14 @@ footer {
     text-align: center;
     color: #FFFFFF;
     font-family: 'Jost', 'Open Sans', sans-serif;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer a:visited {
+    color: gold;
 }
 
 

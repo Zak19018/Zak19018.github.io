@@ -89,6 +89,14 @@ section.forecast div img {
     justify-self: center;
 }
 
+.container {
+    grid-template-columns: 1fr 1fr;
+}
+
+.container img {
+    max-width: 100%;
+}
+
 /*----------- FOOTER --------------*/
 
 }
