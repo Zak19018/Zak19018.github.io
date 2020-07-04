@@ -16,7 +16,6 @@ fetch(apiURL)
     p2.innerHTML = `<strong>High:</strong>  ${jsObject.main.temp_max} &degF`;
     p3.innerHTML = `<strong>Humidity:</strong>  ${jsObject.main.humidity} %`;
     p4.innerHTML = `<strong>Wind Speed:</strong>  ${jsObject.wind.speed} mph`;
-    p5.innerHTML = `<strong>Wind Chill:</strong>  ${jsObject.wind.humidity} &degF`;
 
     summary.appendChild(p1);
     summary.appendChild(p2);
@@ -25,14 +24,12 @@ fetch(apiURL)
     summary.appendChild(p5);
 
     document.getElementById('jsonsum').appendChild(summary);
-   
-  });
 
-  /* wind chill */
+    /* wind chill */
     /* get temp & speed from html and convert to numbers */
-    const tempNumber = parseFloat(document.getElementById('temp').textContent);
+    const tempNumber = jsObject.main.temp;
     //console.log(tempNumber);
-    const speedNumber = parseFloat(document.getElementById('speed').textContent);
+    const speedNumber = jsObject.wind.speed;
     //console.log(speedNumber);
     
         /* wind chill formula */
@@ -43,8 +40,11 @@ fetch(apiURL)
     
         /* checking */
     if(tempNumber<=50 && speedNumber>3) {
-        document.getElementById('chill').textContent = "Wind Chill: "+windChill+"\xB0F";
+        p5.innerHTML = `<strong>Wind Chill:</strong>  ${windChill} &degF`;
     }
         else {
-            document.getElementById('chill').textContent = "N/A";
+            p5.innerHTML = `<strong>Wind Chill:</strong> N/A`;;
         }
+
+  });
+
