@@ -215,6 +215,7 @@ figcaption {
 
 .eventcontainer {
     margin: auto;
+    margin-bottom: 1rem;
     text-align: center;
     max-width: 500px;
     padding: .5rem;
