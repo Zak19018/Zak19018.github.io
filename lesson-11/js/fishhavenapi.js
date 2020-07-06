@@ -47,3 +47,35 @@ fetch(apiURL)
         }
 
   });
+
+  const prestonURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+  fetch(prestonURL)
+      .then(function (response) {
+          return response.json();
+      })
+      .then(function (jsonObject) {
+          // console.table(jsonObject);  temporary checking for valid response and data parsing
+          const towns = jsonObject['towns'];
+          const home = towns.filter(town => (town.name == 'Fish Haven'));
+  
+          home.forEach(town => {
+              let card = document.createElement('article');
+              let p1 = document.createElement('p');
+              let p2 = document.createElement('p');
+              let p3 = document.createElement('p');
+              let p4 = document.createElement('p');
+              
+              p1.innerHTML = town.events[0];
+              p2.innerHTML = town.events[1];
+              p3.innerHTML = town.events[2];
+              p4.innerHTML = town.events[3];
+  
+              card.appendChild(p1);
+              card.appendChild(p2);
+              card.appendChild(p3); 
+              card.appendChild(p4);         
+  
+              document.getElementById('eventsfishhaven').appendChild(card);            
+          });
+      });

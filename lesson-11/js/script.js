@@ -78,30 +78,14 @@ fetch(requestURL)
             let p2 = document.createElement('p');
             let p3 = document.createElement('p');
             let image = document.createElement('img');
-            let p4 = document.createElement('p');
-            let p5 = document.createElement('p');
-            let p6 = document.createElement('p');
-            let p7 = document.createElement('p');
-            let p8 = document.createElement('p');
-            let p9 = document.createElement('p');
-            let p10 = document.createElement('p');
-            let p11= document.createElement('p');
-            let p12 = document.createElement('p');
+            
 
             h3.innerHTML = town.name;
             h4.innerHTML = `<em>"${town.motto}"</em>`;
             p1.innerHTML = `Year Founded:  ${town.yearFounded}`;
             p2.innerHTML = `Population:  ${town.currentPopulation}`;
             p3.innerHTML = `Annual Rain Fall:  ${town.averageRainfall}`;
-            p4.innerHTML = towns[4].events[0];
-            p5.innerHTML = towns[4].events[1];
-            p6.innerHTML = towns[4].events[2];
-            p7.innerHTML = towns[1].events[0];
-            p8.innerHTML = towns[1].events[1];
-            p9.innerHTML = towns[1].events[2];
-            p10.innerHTML = towns[5].events[0];
-            p11.innerHTML = towns[5].events[1];
-            p12.innerHTML = towns[5].events[2];
+            
             
 
             image.setAttribute('src', 'images/' + town.photo);
@@ -114,16 +98,8 @@ fetch(requestURL)
             card.appendChild(p3);
             card.appendChild(image);
 
-            document.getElementById('eventspreston').appendChild(p4);
-            document.getElementById('eventspreston').appendChild(p5);
-            document.getElementById('eventspreston').appendChild(p6);
-            document.getElementById('eventsfishhaven').appendChild(p7);
-            document.getElementById('eventsfishhaven').appendChild(p8);
-            document.getElementById('eventsfishhaven').appendChild(p9);
-            document.getElementById('eventsss').appendChild(p10);
-            document.getElementById('eventsss').appendChild(p11);
-            document.getElementById('eventsss').appendChild(p12);
+          
 
             document.querySelector('div.cards').appendChild(card);            
-        })
+        });
     });
