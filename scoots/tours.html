@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="This is my WDD 230 Scoots Site">
+    <meta name="author" content="Zak Shaik">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <title>Tours: ~Scoots</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div id="headwrap">
+        <header class="clearfix">
+            <img src="images/scoots-logo.png" alt="Scoots Logo">
+            <p>info@scoots.com.mx | +52 55 1234 5678</p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </header>
+    </div>
+
+    <div id="navwrap">
+        <nav class="clearfix"> <!--&#9776;-->
+            <button onclick="toggleMenu()">Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li class="active"><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <h1>Tours</h1>
+        <h2>Explore Cozumel with Scoots</h2>
+        <h3>Here are some possible sites to visit</h3>
+        <h4>Cozumel Beaches</h4>
+        <img src="images/cozumel-cruise.jpg" alt="Colorful Cozumel letters">
+        <p>Among the most popular and attractive of Cozumel's beaches are Playa San Juan and Playa Santa Pilar in the northwest corner of the island, and Playa San Francisco, Playa Santa Rosa, and Playa Palancar to the southwest.</p>
+        <p>Of note on the east side, which opens to the Caribbean Sea, are Playa Encantada, Playa Hanan, Punta Morena, Playa Chen Río, and Playa Chiqueros. Also worth a visit are Playa Mia Grand Beach Park, a popular spot for snorkeling due to its easy access to the coral reefs at El Cielo.</p>
+
+
+        <h4>San Miguel</h4>
+        <img src="images/cozumel-cruise.jpg" alt="Colorful Cozumel letters">
+        <p>On the northwest side of Cozumel, San Miguel de Cozumel is the island's capital and offers many interesting distractions. The town also boasts a major international airport.</p>
+        <p>Another highlight is the interesting Island Museum (Museo de la Isla) with its many exhibits dealing with local geography, history, and the abundant marine life.</p>
+
+        <div id="box">
+            <h2>Contact Us</h2>
+            <section class="contact">
+                <h3>Address:</h3>
+                <p>Playa del Carmen,<br>
+                    Cozumel Ferry dock,<br>
+                    el Centro de Cozumel<br><br>
+                    Terminal Puerta Maya</p>
+                <h3>Phone:</h3>
+                <p>+52 55 1234 5678</p>
+                <h3>Email:</h3>
+                <p>info@scoots.com.mx</p>
+            </section>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119602.41329542287!2d-86.96904218209635!3d20.48262479839195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cf3a0ece15%3A0x9216e3c2b55e5526!2sPlaya%20del%20Carmen-Cozumel%20Ferry%20Dock!5e0!3m2!1sen!2sza!4v1595092788106!5m2!1sen!2sza" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+
+    </main>
+
+    <div id="footwrap">
+        <footer class="clearfix">
+            &copy; ~Scoots 2020 &bull; Zak Shaik &bull; <span id="currentDate"></span> &bull; <a target="_blank" href="resources.html">Resources</a>
+        </footer>
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

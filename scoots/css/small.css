@@ -1,0 +1,307 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+
+div#headwrap {
+    background-color: #FEC001;
+}
+
+header {
+    padding: 1rem 2%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header img {
+    float: left;
+    margin-right: 10px;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+header h3 {
+    margin-top: 1rem;
+    margin-left: 85px;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 100px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 50%;
+  }
+
+.fa-instagram {
+    background: #55ACEE;
+    color: white;
+    border-radius: 50%;
+  }
+
+
+/*----------- NAVIGATION --------------*/
+
+div#navwrap {
+    background-color: #FEC001;
+    border-top: 1px solid #000;
+}
+
+nav button {
+    display: block;
+    margin: auto;
+    padding: 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: #000;
+    font-family: 'Bangers', cursive;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Bangers', cursive;
+}
+
+nav ul li a {
+    display: block;
+    background-color: #000;
+    color: #FFFFFF;
+    padding: 1rem 0;
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+nav ul li a:hover {
+    background-color: #50D01B;
+    color: #000;
+}
+
+nav ul li.active a {
+    background-color: #00A8D5;
+    color: #FFF;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/*----------- MAIN --------------*/
+div.showme {
+    display: block;
+}
+
+div.hideme{
+    display: none;
+}
+
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+main h1 {
+    font-size: 2rem;
+    font-family: 'Bangers', cursive;
+}
+
+main h2 {
+    font-size: 1.4rem;
+}
+
+.summary h2 {
+    font-size: 1.2rem;
+    padding: 0;
+    text-align: center;
+}
+
+.summary {
+    float: right;
+    width: 50%;
+	background-color: rgba(204, 19, 52);
+	border: 1px solid #000;
+	padding: 1rem;
+	box-shadow: 0 0 15px #000000;
+	opacity: .95;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse; 
+  }
+
+  th, td {
+    padding: 15px;
+  }
+
+section.forecast {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+
+.article {
+    padding: 10px;
+    border: 1px solid #586F7C;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+
+.article img {
+    width: 100%;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.map {
+    width: 100%;
+}
+
+.cards img {
+    width: 100%;
+}
+
+.cards article {
+    background-color: rgba(35, 44, 49, 0.2);
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.container {
+    display: grid;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+
+/*----------- FORM --------------*/
+
+form legend {
+    color: #004FFF;
+    }
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+
+.bar span {
+    padding-top: 1rem;
+    display: block;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #004FFF;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    width: 96%;
+    max-width: 20rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+/*----------- FOOTER --------------*/
+
+
+footer {
+    background-color: #000000;
+    padding: 1rem 2%;
+    font-size: .9rem;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Quicksand', sans-serif;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer a:visited {
+    color: gold;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}  
