@@ -38,21 +38,7 @@
 
 
 /*----------- MAIN --------------*/
-.map {
-    justify-self: end;
-}
 
-.cards {
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.container {
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-figure:hover {
-    box-shadow: 5px 10px 18px #586F7C;
-}
 
 /*----------- FOOTER --------------*/
     footer {

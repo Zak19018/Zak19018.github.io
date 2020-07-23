@@ -12,34 +12,6 @@ var month = ["January", "February", "March", "April", "May", "June", "July", "Au
 var year = today.getFullYear();
 document.getElementById('currentDate').innerHTML = weekday[today.getDay()] + ", " + date + " " + month[today.getMonth()] + " " + year ;
 
-//lazy loading
-const imagesToLoad = document.querySelectorAll('img[data-src]');
-
-const loadImages = function(image) {
-	image.setAttribute('src', image.getAttribute('data-src'));
-	image.onload = function() {
-		image.removeAttribute('data-src');
-	};
-};
-if('IntersectionObserver' in window) {
-	var observer = new IntersectionObserver(function(items, observer) {
-		items.forEach(function(item) {
-			if(item.isIntersecting) {
-				loadImages(item.target);
-				observer.unobserve(item.target);
-			}
-		});
-	});
-	imagesToLoad.forEach(function(img) {
-		observer.observe(img);
-	});
-}
-else {
-	imagesToLoad.forEach(function(img) {
-		loadImages(img);
-	});
-}
-
 const d = new Date();
 const todayDayNumber = d.getDay();
 const week = new Array(7);

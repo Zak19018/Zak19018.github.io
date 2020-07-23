@@ -79,8 +79,7 @@ header h3 {
 /*----------- NAVIGATION --------------*/
 
 div#navwrap {
-    background-color: #FEC001;
-    border-top: 1px solid #000;
+    background-color: #CC1334;
 }
 
 nav button {
@@ -114,7 +113,7 @@ nav ul li a {
 
 
 nav ul li a:hover {
-    background-color: #50D01B;
+    background-color: #FEC001;
     color: #000;
 }
 
@@ -128,14 +127,6 @@ nav ul.hide {
 }
 
 /*----------- MAIN --------------*/
-div.showme {
-    display: block;
-}
-
-div.hideme{
-    display: none;
-}
-
 main {
     padding: 0 2%;
     min-height: 10rem;
@@ -157,8 +148,7 @@ main h2 {
 }
 
 .summary {
-    float: right;
-    width: 50%;
+    width: 100%;
 	background-color: rgba(204, 19, 52);
 	border: 1px solid #000;
 	padding: 1rem;
@@ -166,50 +156,44 @@ main h2 {
 	opacity: .95;
 }
 
+table {
+    margin-bottom: 2rem;
+}
+
 table, th, td {
     border: 1px solid black;
-    border-collapse: collapse; 
+    border-collapse: collapse;
   }
 
   th, td {
     padding: 15px;
   }
 
-section.forecast {
+section.forecast div{
+    text-align: center;
+    width: 50%;
+    margin: auto;
     border: 1px solid black;
     padding: 10px;
 }
 
-
+section.forecast img{
+    width: auto;
+}
 
 .article {
     padding: 10px;
-    border: 1px solid #586F7C;
     margin-bottom: 1.5rem;
     margin-top: 1rem;
 }
 
-.article img {
+img {
     width: 100%;
 }
 
 .contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-
-.map {
-    width: 100%;
-}
-
-.cards img {
-    width: 100%;
-}
-
-.cards article {
-    background-color: rgba(35, 44, 49, 0.2);
-    margin-bottom: 1rem;
-    padding: 1rem;
 }
 
 .container {
@@ -220,27 +204,16 @@ section.forecast {
 
 /*----------- FORM --------------*/
 
-form legend {
-    color: #004FFF;
-    }
-
-form label.top, form div {
-    display: block;
+form label, form div {
+    display: flex;
+    flex-direction: column;
     padding-top: 1rem;
-    color: #9c2c13;
+    color: #CC1334;
     font-size: .8rem;
 }
 
-.bar span {
-    padding-top: 1rem;
-    display: block;
-    color: #9c2c13;
-    font-size: .8rem;
-}
-
-form label.top input, form label.top select {
+form label input, form label select {
     -webkit-appearance: none;
-    display: block;
     font-size: 1rem;
     border: solid 1px #999;
     border-radius: 4px;
@@ -251,15 +224,9 @@ form label.top input, form label.top select {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-form label.sbs {
-    display: block;
-    padding: .75rem 0;
-    color: #555;
-}
-
-form input.submitBtn {
+form input.submitButton {
     border: none;
-    background-color: #004FFF;
+    background-color: #00A8D5;
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
@@ -267,14 +234,6 @@ form input.submitBtn {
     max-width: 20rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-}
-
-form label.top input:required {
-    border-left: red solid 6px;
-}
-
-form label.top input:required:valid {
-    border-left: green solid 6px;
 }
 
 /*----------- FOOTER --------------*/

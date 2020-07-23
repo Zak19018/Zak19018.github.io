@@ -7,9 +7,8 @@
 
 
 /*----------- HEADER --------------*/
-    header img {width: 150px; float: left}
-    header h1 {font-size: 2rem; margin-top: 2.5rem;}
-    header h2 {font-size: 1.5rem;}
+    header img {width: 70%; }
+    header p {display: block;}
 
 
 /*----------- NAVIGATION --------------*/
@@ -17,26 +16,11 @@
 
 
 /*----------- MAIN --------------*/
-#five-day {
-    display: block;
-}
+.summary {width: 70%;}
 
 section.forecast {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
     margin-bottom: 1.5rem;
-}
-
-section.forecast div {
-    text-align: center;
-    border: 1.5px solid #000000;
-}
-
-section.forecast div h3 {
-    background-color: #004FFF;
-    color: #FFFFFF;
-    margin: 0;
-    padding: 1rem 0;
 }
 
 section.forecast div img {
@@ -51,10 +35,7 @@ section.forecast div img {
 }
 
 .article img {
-    margin-left: 20px;
-    margin-bottom: 20px;
-    float: right;
-    width: 350px;
+  width: 70%;
 }
 
 #box {
@@ -68,27 +49,6 @@ section.forecast div img {
     grid-column: 1/2;
 }
 
-.map {
-    float: right;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.cards h3, .cards h4, .cards p {
-    grid-column: 1/2;
-    text-align: center;
-}
-
-.cards img {
-    align-self: center;
-    justify-self: center;
-}
-
 .container {
     grid-template-columns: 1fr 1fr;
 }
@@ -96,6 +56,8 @@ section.forecast div img {
 .container img {
     max-width: 100%;
 }
+
+
 
 /*----------- FOOTER --------------*/
 
